@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+body, html{
+    height: 100%;
+}  
+
+.bg-slider{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: bgChange 15s infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes bgChange{
+    0%{
+        background-image: url('illustration-of-heavy-rain-cloudy-weather-with-cartoon-animation-style-rainy-scenery-background-free-vector.jpg');
+    }
+    33%{
+        background-image: url('istockphoto-962500712-640x640.jpg');
+    }
+    66%{
+        background-image: url('pexels-pixabay-355508.jpg');
+    }
+    100%{
+        background-image: url('istockphoto-522795232-612x612.jpg');
+    }
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.5);
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 0 10px black;
+    border: 3px solid rgb(18, 18, 18);
+}
+
+.content h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.content button{
+    padding: 12px 25px;
+    border: none;
+    background-color: #161616;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.content button:hover{
+    background: #282729;
+    transition: all 2s;
+}
+
+
+
+.input-box input{
+  width:100%;
+  padding:8px 10px 0px 10px;
+  font-size: 25px;
+  font-weight: 900;
+  color:#ffffff;
+  background:transparent;
+  border:none;
+  border-bottom:2px solid #888;
+  outline:none;
+}
+
+
+.input-box label{
+  position:absolute;
+  top:50%;
+  left:10px;
+  color:#dccdcd;
+  font-size:16px;
+  pointer-events:none;
+  transform:translateY(-50%);
+  transition:0.4s;
+}
+
+.input-box input:focus,
+.input-box input:valid{
+  border-bottom-color:#ffffff;
+}
+
+.input-box{
+  position:relative;
+  width:300px;
+}
+
+.input-box input:focus ~ label
+,.input-box input:active ~ label,
+.input-box input:valid ~ label{
+  top:-8px;
+  font-size:20px;
+  color:#d2d2d2;
+}
+
+
+ .scroll-box {
+    padding: 10px;
+    width: 320px;
+    height: 250px;
+     background: rgba(0,0,0,0.5);
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+    overflow-y: auto;
+    transition: transform 0.3s;
+  }
+
+  .scroll-box:hover {
+    transform: scale(1.03);
+  }
+
+  .scroll-box h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+
+  .scroll-box::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .scroll-box::-webkit-scrollbar-thumb {
+    background: linear-gradient(#313131, #000000);
+    border-radius: 10px;
+  }
+
+  .scroll-box::-webkit-scrollbar-track {
+    background: #333333;
+    border-radius: 10px;
+  }
+
+@media (max-width:500px){
+  .content{
+    padding: 10px;
+    margin: 10px;
+  }
+  .content h1{
+    font-size: 30px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.input-box{
+  position:relative;
+  width:200px;
+  padding: 10px;
+}
+  .input-box input{
+    font-size:15px;
+  }
+
+  .scroll-box {
+    padding: 15px;
+    width: 230px;
+    height: 250px;
+  }
+}
