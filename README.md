@@ -1,0 +1,1 @@
+Is weather website ke zariye aap apne shehar ka accurate aur updated mausam ka haal maloom kar sakte hain. Yahan aapko daily, weekly aur hourly forecast milta hai jisme temperature, hawa ki raftaar aur barish ka record shamil hota hai.
